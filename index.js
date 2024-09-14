@@ -3,7 +3,8 @@ var randomnumber2 = Math.floor(Math.random()*6)+1
 
 document.querySelector(".img1").setAttribute("src",`images/dice${randomnumber1}.png`)
 document.querySelector(".img2").setAttribute("src",`images/dice${randomnumber2}.png`)
-
+console.log(` Player 1 : images/dice${randomnumber1}.png`)
+console.log(`Player 2 : images/dice${randomnumber2}.png`)
 
 if(randomnumber1>randomnumber2){
 
@@ -18,5 +19,5 @@ else if(randomnumber1 === randomnumber2){
 else{
 
     document.querySelector("h1").innerHTML='Player 2 Wins';
-    
+
 }
